@@ -1,38 +1,120 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    background: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .app {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
   }
-}
+  
+  h1 {
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .todo-input {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .todo-input input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .todo-input button {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .todo-input button:hover {
+    background: #218838;
+  }
+  
+  .todo-list {
+    list-style: none;
+    margin-top: 20px;
+  }
+  
+  .todo-item {
+    background: #fff;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    transition: 0.3s;
+  }
+  
+  .todo-item:hover {
+    background: #f8f8f8;
+  }
+  
+  .todo-text {
+    flex: 1;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .todo-text.completed {
+    text-decoration: line-through;
+    color: gray;
+  }
+  
+  .todo-actions {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .edit-btn,
+  .delete-btn {
+    border: none;
+    padding: 6px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .edit-btn {
+    background: #ffc107;
+    color: white;
+  }
+  
+  .edit-btn:hover {
+    background: #e0a800;
+  }
+  
+  .delete-btn {
+    background: #dc3545;
+    color: white;
+  }
+  
+  .delete-btn:hover {
+    background: #c82333;
+  }
+  
